@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="Welcome123"/>
+  <parameter name="email" value="nitinmanjunath1991@gmail.com"/>
+  <test thread-count="5" name="chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.abc.Parameterisation.ParameterisationApp">
+        <methods>
+          <include name="openChromeBrowser"/>
+          <include name="close"/>
+          <include name="magentoApp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.abc.Parameterisation.ParameterisationApp -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+  <test thread-count="5" name="firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.abc.Parameterisation.ParameterisationApp">
+        <methods>
+          <include name="openChromeBrowser"/>
+          <include name="close"/>
+          <include name="magentoApp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.abc.Parameterisation.ParameterisationApp -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
