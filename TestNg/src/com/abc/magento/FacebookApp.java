@@ -8,7 +8,7 @@ public class FacebookApp
 	@Test
 	public void openChromeBrowser()
 	{
-		System.out.println("chromebrowser is opened");
+		System.out.println("chrome is opened");
 	}
 	@Test(dependsOnMethods="openChromeBrowser")
 	public void login()
